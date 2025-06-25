@@ -1,0 +1,296 @@
+/* css vARIABLES */
+
+:root {
+  --primary-color: #6366f1;
+  /* Indigo */
+  --primary-hover-color: #4f46e5;
+  /* Darker Indigo */
+  --background-light: #f9fafb;
+  /* Light Gray */
+  --background-dark: #1f2937;
+  /* Dark Gray */
+  --text-light: #111827;
+  /* Almost Black */
+  --text-dark: #f9fafb;
+  /* White */
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Themes */
+.theme-light {
+  --bg-color: var(--background-light);
+  --text-color: var(--text-light);
+}
+
+/* Buttons */
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+}
+
+/* #######HEADER########## */
+
+/* Hamburger-to-X Animation */
+.hamburger-line {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.open .line1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.open .line2 {
+  opacity: 0;
+}
+
+.open .line3 {
+  transform: translateY(-0.625rem) rotate(-45deg);
+}
+
+/* Mobile Menu Animation DropDown Animation*/
+#mobile-menu {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* #######FOOTER######### */
+
+
+
+/* #########UTILITIES########## */
+/* Loader styles */
+/* styles.css */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 1);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-icon {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.loaded #loader {
+  display: none;
+}
+
+
+
+/*####### SVG HERO ########*/
+
+.animated-bg circle {
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Pulsating effect */
+.circle1 {
+  animation-name: pulse1;
+}
+
+.circle2 {
+  animation-name: pulse2;
+}
+
+.circle3 {
+  animation-name: pulse3;
+}
+
+@keyframes pulse1 {
+  
+  0%,
+  100% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+  
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulse2 {
+  
+  0%,
+  100% {
+    transform: translateY(0);
+    transform-origin: center;
+  }
+  
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse3 {
+  
+  0%,
+  100% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+  
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+
+
+/*###### ABOUT SECTION ########*/
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: translateY(10%) scale(0.95);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animation Class */
+.animate-fade-in {
+  animation: fadeInScale 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Staggered Animation */
+.child-animate {
+  opacity: 0;
+  transform: translateY(10%) scale(0.95);
+  animation: fadeInScale 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .landscape-lg\:flex-row {
+    flex-direction: row !important;
+  }
+}
+
+/*######## PROJECTS ##########*/
+
+
+/* Initial state for animation */
+#projects {
+  opacity: 0;
+  transform: translateY(10%) scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card {
+  animation: fadeInUp 0.6s ease forwards;
+  animation-play-state: paused;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal Styles */
+    /* Background Fade Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    /* Modal Content Animations */
+    @keyframes modalOpen {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes modalClose {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+    }
+
+    /* Modal Hidden State */
+    #projectModal.hidden {
+      visibility: hidden;
+    }

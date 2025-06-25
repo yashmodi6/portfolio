@@ -1,0 +1,23 @@
+:root {
+  --color-html: #ff5722;
+  /* Vivid Orange */
+  --color-css: #007bff;
+  /* Bright Blue */
+  --color-js: #ffc107;
+  /* Amber */
+  --color-tailwind: #38b2ac;
+  /* Teal */
+  --color-nextjs: #111827;
+  /* Dark Gray */
+  --color-firebase: #f9a825;
+  /* Goldenrod */
+  --color-git: #f14e32;
+  /* Vermilion */
+  --color-github: #24292e;
+  /* GitHub Black */
+  --color-react: #61dafb;
+  /* Soft Cyan */
+  --color-nodejs: #6aa84f;
+  /* Green */
+}
+
