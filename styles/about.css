@@ -1,0 +1,19 @@
+    /* Initial hidden state for animations */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .shape {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s ease-out;
+    }
+    .shape-visible {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 1s ease-out, opacity 1s ease-out;
+    }
