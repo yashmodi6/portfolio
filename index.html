@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
   <link rel="stylesheet" href="./styles/skills.css" type="text/css" media="all" />
   <link rel="stylesheet" href="./styles/about.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./styles/project.css" type="text/css" media="all" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -201,68 +202,104 @@
     </section>
     
     
+    
     <!-- Projects -->
     
-    <section id="projects" class="py-20 ">
-      <div class="container mx-auto px-6">
-        <h2 class="text-5xl font-extrabold text-center mb-12">Featured Projects</h2>
-        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-          
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-screen-xl">
+        <h2 class="text-5xl font-extrabold text-center mb-12 text-gray-800 card-animation">
+          Featured Projects
+        </h2>
+        <div class="grid gap-12 md:grid-cols-2 xl:grid-cols-3 justify-center">
           
           <!-- Card 1 -->
-          <div class="card bg-white rounded-2xl shadow-lg p-6">
-            <img src="./assets/tracker_mockup.jpeg" alt="Study Tracker Preview" class="rounded-t-2xl w-full object-cover mb-4" />
-            <h3 class="text-2xl font-bold mb-3">Study Tracker</h3>
-            <p class="text-gray-600  mb-4">
-              A Next.js & Firebase app to set goals and track study progress with a sleek dashboard.
-            </p>
-            <div class="flex justify-between items-center">
-              <a href="https://github.com/yashmodi6/yovo-study-tracker.git" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700 transition">
-                View on GitHub
-              </a>
-              <button class="modal-trigger text-indigo-600 hover:underline text-sm" data-title="Study Tracker" data-image="./assets/tracker_mockup.jpeg" data-description="<p><strong>Overview:</strong> Study Tracker helps organize academic goals efficiently.</p><p><strong>Technology Stack:</strong> Next.js, Firebase, Tailwind CSS.</p>" data-link="#">
-                <i class="fas fa-eye"></i> Preview
-              </button>
+          <div class="group relative bg-white rounded-2xl shadow-lg transition-transform duration-300 ease-out hover:scale-105 hover:shadow-xl p-6 max-w-md mx-auto card-animation" data-project='{ "name": "Study Tracker", "type": "Web App", "description": "A Next.js & Firebase app to set goals and track study progress with a sleek dashboard.", "techStack": ["Next.js", "Firebase", "Tailwind CSS"], "mockup": "./assets/tracker_mockup.jpeg", "demo": "https://github.com/yashmodi6/yovo-study-tracker.git" }'>
+            <!-- Image -->
+            <div class="relative overflow-hidden rounded-xl">
+              <img src="./assets/tracker_mockup.jpeg" alt="Study Tracker Preview" class="w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+            </div>
+            <!-- Content -->
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-indigo-600">
+                  Study Tracker
+                </h3>
+                <span class="ml-3 bg-indigo-600 text-white text-xs font-semibold uppercase py-1 px-3 rounded-lg">
+                  Web App
+                </span>
+              </div>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                A Next.js & Firebase app to set goals and track study progress with a sleek dashboard.
+              </p>
+              <div class="flex justify-between items-center">
+                <a href="https://github.com/yashmodi6/yovo-study-tracker.git" target="_blank" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-lg shadow transition-colors duration-200 ease-out hover:bg-indigo-700">
+                  View on GitHub
+                </a>
+                <button class="modal-trigger flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                  <i class="fas fa-eye mr-1"></i> Preview
+                </button>
+              </div>
             </div>
           </div>
           
           <!-- Card 2 -->
-          <div class="card bg-white rounded-2xl shadow-lg p-6">
-            <img src="./assets/helper_mockup.png" alt="Study Tracker Preview" class="rounded-t-2xl w-full object-cover mb-4" />
-            <h3 class="text-2xl font-bold mb-3">Yovo Helper</h3>
-            <p class="text-gray-600  mb-4">
-              An Android App to help people download social media videos directly to gallery.
-            </p>
-            <div class="flex justify-between items-center">
-              <a href="https://github.com/yashmodi6/YovoHelper.git" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700 transition">
-                View on GitHub
-              </a>
-              <button class="modal-trigger text-indigo-600 hover:underline text-sm" data-title="Study Tracker" data-image="./assets/helper_mockup.png" data-description="<p><strong>Overview:</strong> Help Downloading Video Easy.</p><p><strong>Technology Stack:</strong> Kotlin, Java, Python, AI.</p>" data-link="#">
-                <i class="fas fa-eye"></i> Preview
-              </button>
+          <div class="group relative bg-white rounded-2xl shadow-lg transition-transform duration-300 ease-out hover:scale-105 hover:shadow-xl p-6 max-w-md mx-auto card-animation" data-project='{
+"name": "Yovo Helper",
+"type": "Android App",
+"description": "An Android app to help users download social media videos directly to their gallery.",
+"techStack": ["Java", "Kotlin", "Python", "ChatGPT"],
+"mockup": "./assets/helper_mockup.png",
+"demo": "https://github.com/yashmodi6/YovoHelper.git"
+}'>
+            <!-- Image -->
+            <div class="relative overflow-hidden rounded-xl">
+              <img src="./assets/helper_mockup.png" alt="Yovo Helper Preview" class="w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+            </div>
+            <!-- Content -->
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-indigo-600">
+                  Yovo Helper
+                </h3>
+                <span class="ml-3 bg-indigo-600 text-white text-xs font-semibold uppercase py-1 px-3 rounded-lg">
+                  Android
+                </span>
+              </div>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                An Android App to help people download social media videos directly to their gallery.
+              </p>
+              <div class="flex justify-between items-center">
+                <a href="https://github.com/yashmodi6/YovoHelper.git" target="_blank" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-lg shadow transition-colors duration-200 ease-out hover:bg-indigo-700">
+                  View on GitHub
+                </a>
+                <button class="modal-trigger flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                  <i class="fas fa-eye mr-1"></i> Preview
+                </button>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
     
     <!-- Modal -->
-    <div id="projectModal" class="fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden z-50 opacity-0">
-      <div id="modalContent" class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full mx-4 md:mx-8 p-6 relative transform scale-90">
-        <button class="close-modal absolute top-4 right-4 text-gray-600  hover:text-gray-900 text-2xl">
-          &times;
+    
+    <div id="modal-backdrop" class="modal-backdrop hidden"></div><!-- Modal -->
+    <div id="project-modal" class="modal fixed inset-0 items-center justify-center">
+      <div class="bg-white rounded-xl p-8 shadow-lg max-w-lg w-full relative transform transition-all z-50">
+        <button id="modal-close" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+          <i class="fas fa-times"></i>
         </button>
-        <h3 id="modalTitle" class="text-2xl md:text-3xl font-extrabold text-gray-900 text-center mb-4"></h3>
-        <img id="modalImage" src="" alt="Project Preview" class="w-full rounded-lg shadow-md mb-6 object-cover h-64 md:h-80 lg:h-96">
-        <div id="modalDescription" class="text-gray-700 text-base md:text-lg leading-relaxed mb-6 max-h-60 overflow-y-auto pr-4"></div>
-        <div class="text-center">
-          <a id="modalCta" href="#" target="_blank" class="inline-block py-3 px-8 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-200">
-            View Demo
-          </a>
-        </div>
+        <h2 id="modal-title" class="text-3xl font-extrabold text-gray-800 mb-4 leading-tight"></h2>
+        <img id="modal-image" src="" alt="Project Mockup" class="rounded-lg mb-4">
+        <p id="modal-description" class="text-gray-700 text-lg mb-4 leading-relaxed"></p>
+        <ul id="modal-tech-stack" class="text-gray-600 text-base mb-4 space-y-2"></ul>
+        <a id="modal-demo" target="_blank" href="#" class="block py-2 px-4 bg-indigo-600 text-white text-center text-lg font-medium rounded-lg shadow transition-colors duration-200 ease-out hover:bg-indigo-700">
+          View Demo
+        </a>
       </div>
     </div>
-    
     
     <!-- Skills Section -->
     
