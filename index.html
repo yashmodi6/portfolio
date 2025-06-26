@@ -9,6 +9,7 @@
   <!-- Local StyleSheet -->
   <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
   <link rel="stylesheet" href="./styles/skills.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./styles/about.css" type="text/css" media="all" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -19,11 +20,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js" integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
   
 
-  
   <!-- Local Javascript -->
   <script src="./scripts/loader.js" defer></script>
   <script src="./scripts/mobile-menu.js" defer></script>
-<!--  <script src="./scripts/theme-toggle.js" defer></script> -->
+  <!--  <script src="./scripts/theme-toggle.js" defer></script> -->
   <script src="./scripts/typing-animation.js" defer></script>
   <script src="./scripts/about-animation.js" defer></script>
   <script src="./scripts/projects-animation.js" defer></script>
@@ -64,7 +64,7 @@
         <a href="https://github.com/yashmodi6" target="_blank" class="hover:text-indigo-600">
           <i class="fab fa-github text-2xl"></i>
         </a>
-       <button id="theme-toggle" class="p-2 rounded-xl w-2 md:pr-10 opacity-0">
+        <button id="theme-toggle" class="p-2 rounded-xl w-2 md:pr-10 opacity-0">
           <!--   Dynamically Updated -->
         </button>
         <button id="menu-toggle" class="pl-5 flex flex-col space-y-2 md:hidden">
@@ -100,53 +100,102 @@
         <circle class="circle3" cx="600" cy="450" r="150" fill="rgba(129, 140, 248, 0.45)" />
       </svg>
       
-      
-      
-      
       <div class="text-center px-6 z-10">
         <h2 class="text-5xl font-bold mb-4 text-gray-900">
-          Hi, I'm <span id="dynamic-name" class="text-indigo-600 whitespace-nowrap">Yash Modi</span>
+          Hi, I'm <span id="dynamic-name" class="text-indigo-600 lg:inline-block md:inline-block block whitespace-nowrap">Yash Modi</span>
         </h2>
         <p class="text-lg mb-6 max-w-xl mx-auto text-gray-700">
           Aspiring IIT candidate and creative web developer crafting modern, responsive experiences.
         </p>
-        <a href="#projects" class="btn-primary inline-block py-3 px-8 rounded-full bg-indigo-600 text-white font-semibold shadow-md hover:shadow-lg hover:bg-indigo-700 transition-all transform hover:-translate-y-1 hover:scale-105">
-          View My Work
-        </a>
+<div class="flex flex-wrap justify-center items-center gap-4">
+  <a 
+    href="#projects" 
+    class="btn-primary inline-flex items-center justify-center py-3 px-8 rounded-full bg-indigo-600 text-white font-semibold shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-105 hover:bg-indigo-700">
+    View My Work
+  </a>
+  <a 
+    href="#contact" 
+    class="btn-secondary inline-flex items-center justify-center py-3 px-8 rounded-full bg-gray-900 text-white font-semibold shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-105 hover:bg-gray-800">
+    Hire Me
+  </a>
+</div>
       </div>
     </section>
     
     
     
     <!-- About Page -->
-    <section id="about" class="relative py-32 px-6 md:px-16 lg:px-24 xl:px-32 bg-white text-gray-900 overflow-hidden opacity-0 transform translate-y-10 scale-95">
-      
-      <div class="container mx-auto flex flex-col-reverse items-center gap-16 relative z-10 max-w-screen-xl sm:flex-col-reverse landscape-lg:flex-row lg:flex-row">
-        <!-- Text Content -->
-        <div class="flex-1 text-center md:text-center lg:text-left child-animate">
-          <h2 class="text-6xl font-extrabold mb-6 tracking-tight leading-tight">
+    <section id="about" class="relative py-32 px-6 md:px-16 lg:px-24 xl:px-32 overflow-hidden">
+      <div class="container mx-auto flex flex-col lg:flex-row gap-16 items-center max-w-screen-xl">
+        <!-- Image & Shapes -->
+        <div class="relative flex-1 lg:flex lg:justify-center lg:items-center animate-on-scroll">
+          <img src="../assets/avatar.png" alt="Avatar" class="rounded-full w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover shadow-lg transform hover:rotate-3 hover:scale-105 transition-all duration-500" />
+          <div class="absolute -top-6 -right-6 w-14 h-14 md:w-16 md:h-16 bg-indigo-300 rounded-full shape"></div>
+          <div class="absolute bottom-0 left-0 w-24 h-24 md:w-28 md:h-28 bg-indigo-500 rounded-full shape"></div>
+        </div>
+        
+        <!-- Text & Buttons -->
+        <div class="flex-1 space-y-6">
+          <h2 class="text-5xl md:text-6xl font-extrabold text-gray-800 animate-on-scroll">
             About <span class="text-indigo-600">Me</span>
           </h2>
-          <p class="text-xl mb-6 leading-relaxed">
-            I’m <span class="font-bold text-indigo-600">Yash Modi</span>, an aspiring IIT candidate and a web developer passionate about creating clean, functional, and visually appealing digital experiences.
-          </p>
-          
-          
-          <p class="text-xl mb-6 leading-relaxed">
-            Beyond coding, I believe in building connections and contributing to a collaborative community of developers. Let’s connect and create something extraordinary!
-          </p>
-          <a href="#contact" class="inline-block py-4 px-10 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-            Get in Touch 🚀
-          </a>
-        </div>
-        <!-- Image Section -->
-        <div class="flex-1 flex justify-center relative child-animate">
-          <div class="relative">
-            <img src="./assets/avatar.png" alt="Random Image" class="rounded-full w-96 h-96 object-cover shadow-2xl transform hover:rotate-3 hover:scale-105 transition duration-500" />
-            <!-- Decorative Shapes -->
-            <div class="absolute -top-8 -right-8 w-20 h-20 bg-indigo-300 rounded-full"></div>
-            <div class="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500 rounded-full"></div>
+          <div class="space-y-4">
+            <p class="text-lg md:text-xl text-gray-700 animate-on-scroll">
+              Hello, I’m <span class="font-bold text-indigo-600">Yash Modi</span> — a passionate web developer and IIT aspirant, crafting user-centric digital experiences.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 animate-on-scroll">
+              Expert in <span class="font-semibold">HTML, CSS, JavaScript, React, and Next.js</span>. I turn complex problems into elegant, functional solutions.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 animate-on-scroll">
+              Outside dev, I explore astrophysics, sharpen problem-solving skills, and brainstorm creative concepts. Let’s build something great!
+            </p>
           </div>
+          
+          <div class="flex flex-col md:flex-row gap-4 mt-8 animate-on-scroll">
+            <a href="#contact" class="flex-1 py-4 px-6 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+              <i class="fas fa-envelope mr-2"></i> Get in Touch
+            </a>
+            <a href="/path/to/CV.pdf" download class="flex-1 py-4 px-6 bg-white text-indigo-600 font-semibold border-2 border-indigo-600 rounded-lg shadow hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+              <i class="fas fa-file-download mr-2"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <!-- Card 1 -->
+        <div class="group p-6 bg-white rounded-xl shadow-lg border-l-4 border-indigo-600 flex flex-col items-center text-center animate-on-scroll hover:shadow-2xl transition-all duration-300">
+          <div class="p-4 bg-indigo-50 rounded-full mb-4 text-indigo-600 text-2xl">
+            <i class="fas fa-smile-beam"></i>
+          </div>
+          <h3 class="text-3xl font-extrabold text-gray-800">95%</h3>
+          <p class="mt-1 text-gray-600">Client Satisfaction</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="group p-6 bg-white rounded-xl shadow-lg border-l-4 border-indigo-600 flex flex-col items-center text-center animate-on-scroll hover:shadow-2xl transition-all duration-300">
+          <div class="p-4 bg-indigo-50 rounded-full mb-4 text-indigo-600 text-2xl">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3 class="text-3xl font-extrabold text-gray-800">50+</h3>
+          <p class="mt-1 text-gray-600">Projects Completed</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="group p-6 bg-white rounded-xl shadow-lg border-l-4 border-indigo-600 flex flex-col items-center text-center animate-on-scroll hover:shadow-2xl transition-all duration-300">
+          <div class="p-4 bg-indigo-50 rounded-full mb-4 text-indigo-600 text-2xl">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-3xl font-extrabold text-gray-800">30+</h3>
+          <p class="mt-1 text-gray-600">Clients Worked For</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="group p-6 bg-white rounded-xl shadow-lg border-l-4 border-indigo-600 flex flex-col items-center text-center animate-on-scroll hover:shadow-2xl transition-all duration-300">
+          <div class="p-4 bg-indigo-50 rounded-full mb-4 text-indigo-600 text-2xl">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="text-3xl font-extrabold text-gray-800">3+</h3>
+          <p class="mt-1 text-gray-600">Years of Experience</p>
         </div>
       </div>
     </section>
@@ -162,16 +211,16 @@
           
           <!-- Card 1 -->
           <div class="card bg-white rounded-2xl shadow-lg p-6">
-            <img src="https://picsum.photos/800/450" alt="Study Tracker Preview" class="rounded-t-2xl w-full object-cover mb-4" />
+            <img src="./assets/tracker_mockup.jpeg" alt="Study Tracker Preview" class="rounded-t-2xl w-full object-cover mb-4" />
             <h3 class="text-2xl font-bold mb-3">Study Tracker</h3>
             <p class="text-gray-600  mb-4">
               A Next.js & Firebase app to set goals and track study progress with a sleek dashboard.
             </p>
             <div class="flex justify-between items-center">
-              <a href="#" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700 transition">
+              <a href="https://github.com/yashmodi6/yovo-study-tracker.git" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700 transition">
                 View on GitHub
               </a>
-              <button class="modal-trigger text-indigo-600 hover:underline text-sm" data-title="Study Tracker" data-image="https://picsum.photos/800/450" data-description="<p><strong>Overview:</strong> Study Tracker helps organize academic goals efficiently.</p><p><strong>Technology Stack:</strong> Next.js, Firebase, Tailwind CSS.</p>" data-link="#">
+              <button class="modal-trigger text-indigo-600 hover:underline text-sm" data-title="Study Tracker" data-image="./assets/tracker_mockup.jpeg" data-description="<p><strong>Overview:</strong> Study Tracker helps organize academic goals efficiently.</p><p><strong>Technology Stack:</strong> Next.js, Firebase, Tailwind CSS.</p>" data-link="#">
                 <i class="fas fa-eye"></i> Preview
               </button>
             </div>
@@ -179,16 +228,16 @@
           
           <!-- Card 2 -->
           <div class="card bg-white rounded-2xl shadow-lg p-6">
-            <img src="https://picsum.photos/800/450" alt="Study Tracker Preview" class="rounded-t-2xl w-full object-cover mb-4" />
+            <img src="./assets/helper_mockup.png" alt="Study Tracker Preview" class="rounded-t-2xl w-full object-cover mb-4" />
             <h3 class="text-2xl font-bold mb-3">Yovo Helper</h3>
             <p class="text-gray-600  mb-4">
-              An Android App to help peopel download socila media videos directly to galley.
+              An Android App to help people download social media videos directly to gallery.
             </p>
             <div class="flex justify-between items-center">
-              <a href="#" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700 transition">
+              <a href="https://github.com/yashmodi6/YovoHelper.git" class="inline-block py-2 px-4 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700 transition">
                 View on GitHub
               </a>
-              <button class="modal-trigger text-indigo-600 hover:underline text-sm" data-title="Study Tracker" data-image="https://picsum.photos/800/450" data-description="<p><strong>Overview:</strong> Help Downloading Video Easy.</p><p><strong>Technology Stack:</strong> Kotlin, Java, Python, AI.</p>" data-link="#">
+              <button class="modal-trigger text-indigo-600 hover:underline text-sm" data-title="Study Tracker" data-image="./assets/helper_mockup.png" data-description="<p><strong>Overview:</strong> Help Downloading Video Easy.</p><p><strong>Technology Stack:</strong> Kotlin, Java, Python, AI.</p>" data-link="#">
                 <i class="fas fa-eye"></i> Preview
               </button>
             </div>
@@ -276,84 +325,83 @@
       </div>
     </section>
     
-    
     <!-- Conatct Us Section -->
     
     <section id="contact" class="py-20 bg-gray-50 opacity-0 translate-y-10 transition-all duration-700">
-    <div class="container mx-auto px-6 lg:px-16">
-      <!-- Header -->
-      <div class="text-center mb-12 child-animate opacity-0 translate-y-10 transition-all duration-700">
-        <h2 class="text-5xl font-extrabold text-gray-800">Get in Touch</h2>
-        <p class="mt-4 text-lg text-gray-600">
-          I’d love to hear from you. Feel free to reach out via email, phone, or by visiting.
-        </p>
-      </div>
-      
-      <!-- Layout -->
-      <div class="space-y-16">
-        <!-- Contact Info Boxes -->
-        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 child-animate opacity-0 translate-y-10 transition-all duration-700">
-          <!-- Email Box -->
-          <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-            <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
-              <i class="fas fa-envelope text-2xl"></i>
-            </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Email</h3>
-            <p class="text-gray-600 text-center">
-              <a href="mailto:yourname@example.com" class="hover:underline hover:text-indigo-600">
-                yovotheheroes.com
-              </a>
-            </p>
-          </div>
-          
-          <!-- Phone Box -->
-          <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-            <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
-              <i class="fas fa-phone-alt text-2xl"></i>
-            </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Phone</h3>
-            <p class="text-gray-600 text-center">
-              +91 92295 26265
-            </p>
-          </div>
-          
-          <!-- Address Box -->
-          <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-            <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
-              <i class="fas fa-map-marker-alt text-2xl"></i>
-            </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Address</h3>
-            <p class="text-gray-600 text-center">
-              Deoghar , India
-            </p>
-          </div>
+      <div class="container mx-auto px-6 lg:px-16">
+        <!-- Header -->
+        <div class="text-center mb-12 child-animate opacity-0 translate-y-10 transition-all duration-700">
+          <h2 class="text-5xl font-extrabold text-gray-800">Get in Touch</h2>
+          <p class="mt-4 text-lg text-gray-600">
+            I’d love to hear from you. Feel free to reach out via email, phone, or by visiting.
+          </p>
         </div>
         
-        <!-- Contact Form -->
-        <div class="child-animate opacity-0 translate-y-10 transition-all duration-700">
-          <form action="https://formspree.io/f/{your_form_id}" method="POST" class="bg-white shadow-lg rounded-2xl p-8 space-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-800 mb-2">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        <!-- Layout -->
+        <div class="space-y-16">
+          <!-- Contact Info Boxes -->
+          <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 child-animate opacity-0 translate-y-10 transition-all duration-700">
+            <!-- Email Box -->
+            <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
+              <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
+                <i class="fas fa-envelope text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Email</h3>
+              <p class="text-gray-600 text-center">
+                <a href="mailto:yourname@example.com" class="hover:underline hover:text-indigo-600">
+                  yovotheheroes@gmail.com
+                </a>
+              </p>
             </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-800 mb-2">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="johndoe@example.com" required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+            
+            <!-- Phone Box -->
+            <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
+              <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
+                <i class="fas fa-phone-alt text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Phone</h3>
+              <p class="text-gray-600 text-center">
+                +91 92295 26265
+              </p>
             </div>
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-800 mb-2">Your Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+            
+            <!-- Address Box -->
+            <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
+              <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
+                <i class="fas fa-map-marker-alt text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Address</h3>
+              <p class="text-gray-600 text-center">
+                Deoghar , India
+              </p>
             </div>
-            <button type="submit" class="w-full py-3 px-6 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition transform hover:scale-105">
-              Send Message
-            </button>
-          </form>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="child-animate opacity-0 translate-y-10 transition-all duration-700">
+            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="bg-white shadow-lg rounded-2xl p-8 space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-800 mb-2">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-800 mb-2">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-800 mb-2">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+              </div>
+              <button type="submit" class="w-full py-3 px-6 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition transform hover:scale-105">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
+    </section>
+    
+    
     
     
     <!-- Footer -->

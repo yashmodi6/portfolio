@@ -177,37 +177,6 @@ body.loaded #loader {
 
 /*###### ABOUT SECTION ########*/
 
-@keyframes fadeInScale {
-  0% {
-    opacity: 0;
-    transform: translateY(10%) scale(0.95);
-  }
-  
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* Animation Class */
-.animate-fade-in {
-  animation: fadeInScale 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-/* Staggered Animation */
-.child-animate {
-  opacity: 0;
-  transform: translateY(10%) scale(0.95);
-  animation: fadeInScale 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-
-@media (orientation: landscape) and (max-width: 1024px) {
-  .landscape-lg\:flex-row {
-    flex-direction: row !important;
-  }
-}
-
 /*######## PROJECTS ##########*/
 
 
