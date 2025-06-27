@@ -1,23 +1,58 @@
-:root {
-  --color-html: #ff5722;
-  /* Vivid Orange */
-  --color-css: #007bff;
-  /* Bright Blue */
-  --color-js: #ffc107;
-  /* Amber */
-  --color-tailwind: #38b2ac;
-  /* Teal */
-  --color-nextjs: #111827;
-  /* Dark Gray */
-  --color-firebase: #f9a825;
-  /* Goldenrod */
-  --color-git: #f14e32;
-  /* Vermilion */
-  --color-github: #24292e;
-  /* GitHub Black */
-  --color-react: #61dafb;
-  /* Soft Cyan */
-  --color-nodejs: #6aa84f;
-  /* Green */
-}
 
+    .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .group:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+    .tab-button {
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.5rem 1.5rem;
+      background-color: #6366F1;
+      color: white;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .tab-button:hover {
+      background-color: #4C51BF;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    .skill-card {
+      opacity: 1;
+      transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      background-color: #ffffff;
+    }
+    .skill-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      
+    }
+    .skill-card.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    /* Hide scrollbar for cleaner look */
+    .scrollbar-hide {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, and Opera */
+    }
+    .tabs-container {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      overflow-x: auto;
+      position: relative;
+      margin: 0 -1rem;
+      box-sizing: content-box;
+    }
+  
