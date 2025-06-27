@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
   <link rel="stylesheet" href="./styles/skills.css" type="text/css" media="all" />
   <link rel="stylesheet" href="./styles/about.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="./styles/project.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./styles/project.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./styles/contact.css" type="text/css" media="all" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -368,60 +369,49 @@
     </section>
     
     <!-- Conatct Us Section -->
-    
-    <section id="contact" class="py-20 bg-gray-50 opacity-0 translate-y-10 transition-all duration-700">
+       
+    <section id="contact" class="py-20 bg-gray-50">
       <div class="container mx-auto px-6 lg:px-16">
         <!-- Header -->
-        <div class="text-center mb-12 child-animate opacity-0 translate-y-10 transition-all duration-700">
-          <h2 class="text-5xl font-extrabold text-gray-800">Get in Touch</h2>
+        <div class="text-center mb-12 contact-animate">
+          <h2 class="text-5xl font-extrabold text-gray-800">Let’s Connect</h2>
           <p class="mt-4 text-lg text-gray-600">
-            I’d love to hear from you. Feel free to reach out via email, phone, or by visiting.
+            Got a question or just want to say hi? Feel free to get in touch!
           </p>
         </div>
         
-        <!-- Layout -->
-        <div class="space-y-16">
-          <!-- Contact Info Boxes -->
-          <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 child-animate opacity-0 translate-y-10 transition-all duration-700">
-            <!-- Email Box -->
-            <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-              <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
-                <i class="fas fa-envelope text-2xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Email</h3>
-              <p class="text-gray-600 text-center">
-                <a href="mailto:yourname@example.com" class="hover:underline hover:text-indigo-600">
-                  yovotheheroes@gmail.com
-                </a>
-              </p>
+        <!-- Contact Info Cards -->
+        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16 contact-animate">
+          <a href="mailto:yourname@example.com" class="group flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+            <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4">
+              <i class="fas fa-envelope text-2xl"></i>
             </div>
-            
-            <!-- Phone Box -->
-            <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-              <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
-                <i class="fas fa-phone-alt text-2xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Phone</h3>
-              <p class="text-gray-600 text-center">
-                +91 92295 26265
-              </p>
-            </div>
-            
-            <!-- Address Box -->
-            <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-              <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4 shadow-md">
-                <i class="fas fa-map-marker-alt text-2xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Address</h3>
-              <p class="text-gray-600 text-center">
-                Deoghar , India
-              </p>
-            </div>
-          </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-indigo-600">Email</h3>
+            <p class="text-gray-600 text-center">yovotheheroes@gmail.com</p>
+          </a>
           
-          <!-- Contact Form -->
-          <div class="child-animate opacity-0 translate-y-10 transition-all duration-700">
-            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="bg-white shadow-lg rounded-2xl p-8 space-y-6">
+          <a href="tel:+919229526265" class="group flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+            <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4">
+              <i class="fas fa-phone-alt text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-indigo-600">Phone</h3>
+            <p class="text-gray-600 text-center">+91 92295 26265</p>
+          </a>
+          
+          <a href="https://maps.app.goo.gl/7MjAARTFXLdxb2QF6" target="_blank" class="group flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+            <div class="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full mb-4">
+              <i class="fas fa-map-marker-alt text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-indigo-600">Location</h3>
+            <p class="text-gray-600 text-center">Deoghar, India</p>
+          </a>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 lg:w-3/4 mx-auto contact-animate">
+          <h3 class="text-3xl font-bold text-gray-800 mb-6">Send Me a Message</h3>
+          <form id="contactForm" class="space-y-6" enctype="multipart/form-data" novalidate>
+            <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-800 mb-2">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
@@ -430,18 +420,31 @@
                 <label for="email" class="block text-sm font-medium text-gray-800 mb-2">Your Email</label>
                 <input type="email" id="email" name="email" placeholder="johndoe@example.com" required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
               </div>
-              <div>
-                <label for="message" class="block text-sm font-medium text-gray-800 mb-2">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
-              </div>
-              <button type="submit" class="w-full py-3 px-6 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition transform hover:scale-105">
-                Send Message
-              </button>
-            </form>
-          </div>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-800 mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required class="w-full p-4 bg-gray-50 text-gray-800 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full py-3 px-6 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition-transform transform hover:scale-105">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>
+    
+    <!-- ContactModal Component -->
+    <div id="conatct-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+      <div class="bg-white rounded-2xl p-8 shadow-lg w-full max-w-md transform transition-all scale-75 opacity-0">
+        <h3 id="conatctModalTitle" class="text-2xl font-bold text-gray-800 mb-4"></h3>
+        <p id="conatctModalMessage" class="text-gray-600 mb-6"></p>
+        <button id="closeModal" class="py-2 px-4 bg-indigo-600 text-white font-bold rounded-lg shadow hover:bg-indigo-700">
+          Close
+        </button>
+      </div>
+    </div>
+    
     
     
     
