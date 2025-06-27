@@ -12,7 +12,7 @@
       font-size: 1rem;
       font-weight: 500;
       padding: 0.5rem 1.5rem;
-      background-color: #6366F1;
+      background-color: #4f46e5;
       color: white;
       border-radius: 9999px;
       transition: all 0.3s ease;
@@ -32,11 +32,6 @@
       transform: scale(1.05);
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
       
-    }
-    .skill-card.hidden {
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
     }
     /* Hide scrollbar for cleaner look */
     .scrollbar-hide {
