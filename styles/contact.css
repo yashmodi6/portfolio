@@ -1,0 +1,5 @@
+.contact-animate {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.7s ease-out;
+}
