@@ -6,6 +6,32 @@
     --color-bezelLight: #e7e0c4;
     --color-bezelDark: #f5f0db;
     --color-screenEdge: #000000;
+
+    --animate-tada: tada 1s ease-in-out 1;
+
+    @keyframes tada {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        10%,
+        20% {
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        }
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        }
+        40%,
+        60%,
+        80% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        }
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
+    }
 }
 
 /****Computer Screen****/
@@ -121,4 +147,18 @@
     100% {
         transform: translateY(100vh);
     }
+}
+
+nav {
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all 1000ms ease-in-out;
+    @starting-style {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+}
+
+#logo-text:hover span {
+    display: inline-block;
 }
