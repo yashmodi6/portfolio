@@ -1,11 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import ComputerScreen from "./components/ComputerScreen";
 const App = () => {
-  return (
-    <div>
-      <p>Hello</p>
-    </div>
-  )
-}
+    return (
+        <main>
+            <ComputerScreen />
+            
+        </main>
+    );
+};
 
-export default App
+export default App;
