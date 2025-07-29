@@ -37,24 +37,6 @@ const Navbar: React.FC = () => {
         setIsMobileMenuOpen(false);
     }, []);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const movingElement = document.getElementById("movingElement");
-
-            if (!movingElement) return;
-
-            if (scrollPosition < 100) {
-                movingElement.style.bottom = "0px";
-            } else {
-                movingElement.style.bottom = `${scrollPosition - 90}px`;
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     const navLinks: NavLink[] = [
         { id: "home", label: "HOME" },
         { id: "about", label: "ABOUT" },
@@ -107,7 +89,7 @@ const Navbar: React.FC = () => {
                             isMobileMenuOpen ? "block" : "hidden"
                         } w-full md:block md:w-auto`}
                     >
-                        <ul className="mt-4 flex w-full flex-col rounded-lg bg-white p-4 font-medium tracking-wide md:mt-0 md:flex-row md:space-x-4 md:bg-transparent md:p-0">
+                        <ul className="mt-4 flex w-full flex-col rounded-lg bg-white p-4 font-medium tracking-wide md:mt-0 md:flex-row md:space-x-4 md:bg-transparent mr-5 md:p-0">
                             {navLinks.map(link => (
                                 <NavItem
                                     key={link.id}
