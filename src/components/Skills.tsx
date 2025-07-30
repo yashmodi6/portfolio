@@ -41,19 +41,19 @@ const skills: Skill[] = [
     {
         name: "React JS",
         description: "JS library",
-        icon: ReactLogo, // 🔁 You’ll need to import this image
+        icon: ReactLogo, 
         bgColor: "bg-cyan-500/30"
     },
     {
         name: "Next JS",
         description: "React framework",
-        icon: NextJsLogo, // 🔁 Import needed
+        icon: NextJsLogo, 
         bgColor: "bg-neutral-200/30"
     },
     {
         name: "Node.js",
         description: "Backend runtime",
-        icon: NodeJsLogo, // 🔁 Import needed
+        icon: NodeJsLogo, 
         bgColor: "bg-green-500/30"
     },
     {
@@ -68,13 +68,13 @@ const currentlyLearning: Skill[] = [
     {
         name: "React Native",
         description: "Mobile framework",
-        icon: ReactNativeLogo, // 🔁 Import needed
+        icon: ReactNativeLogo,
         bgColor: "bg-indigo-500/30"
     },
     {
         name: "Java",
         description: "Programming language",
-        icon: JavaLogo, // 🔁 Import needed
+        icon: JavaLogo, 
         bgColor: "bg-red-600/30"
     }
 ];
