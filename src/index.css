@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  
+
+  /* Computer SCreen */
     --color-casingLight: #f0ead0;
     --color-casingDark: #e5d9bf;
     --color-bezelLight: #e7e0c4;
@@ -587,5 +590,102 @@ nav {
     100% {
         -webkit-text-fill-color: transparent;
         text-shadow: none;
+    }
+}
+
+/**** About ****/
+@utility fadeIn {
+    scale: 0.7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    /* animation-range: entry; */
+    animation-range-start: cover;
+    animation-range-end: 400px;
+}
+
+#dino {
+    animation:
+        dino-run 200ms linear infinite,
+        dino-jump 5s linear infinite;
+}
+@keyframes dino-run {
+    0% {
+        background-image: url(./assets/images/dino_run_1.png);
+    }
+    100% {
+        background-image: url(./assets/images/dino_run_2.png);
+    }
+}
+@keyframes dino-jump {
+    0% {
+        transform: translateY(0px);
+    }
+    48% {
+        transform: translateY(0px);
+    }
+    49% {
+        transform: translateY(-55px);
+    }
+    64% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+#dino-bg {
+    animation: pan 10s linear infinite;
+}
+@keyframes pan {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+}
+#cactus {
+    background-size: auto 100%;
+    background-position: 100% 0%;
+    animation: pan-2 10s linear infinite;
+}
+#cactus-2 {
+    background-size: auto 100%;
+    background-position: 100% 0%;
+    animation: pan-3 10s linear infinite;
+}
+#cloud {
+    background-position: 100% 0%;
+    background-size: auto 20%;
+    animation: pan-2 20s linear infinite;
+}
+@keyframes pan-2 {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: -100% 0%;
+    }
+    100% {
+        background-position: -100% 0%;
+    }
+}
+@keyframes pan-3 {
+    0%,
+    50% {
+        background-position: 120% 0%;
+    }
+    50% {
+        background-position: 120% 0%;
+    }
+    100% {
+        background-position: -100% 0%;
+    }
+}
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
     }
 }
