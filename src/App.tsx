@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Project from "./components/Project"
 const App = () => {
     return (
         <main className="absolute h-full w-full">
@@ -15,6 +16,7 @@ const App = () => {
             >
                 <About />
                 <Skills />
+                <Project/>
             
             </div>
         </main>
