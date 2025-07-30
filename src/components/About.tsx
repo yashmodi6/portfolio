@@ -10,10 +10,7 @@ import cactus2 from "../assets/images/cactus_2.png";
 
 const About: React.FC = () => {
     return (
-        <section
-            id="about"
-            className="relative z-20 mt-[100vh] min-h-full w-full border-t-2 bg-blue-400/70 px-12 pt-36 pb-14 backdrop-blur-lg sm:px-16 md:px-20 lg:px-24 xl:px-28"
-        >
+        <section id="about" className="scroll-mt-28">
             {/* About */}
             <div className="fadeIn grid h-fit w-full grid-cols-1 gap-4 rounded-lg md:grid-cols-12">
                 {/* column 1 */}

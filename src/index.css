@@ -41,6 +41,7 @@
 
 html {
     font-family: "Poppins", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /****Computer Screen****/
