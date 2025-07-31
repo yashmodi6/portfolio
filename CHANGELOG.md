@@ -47,6 +47,7 @@
 * initialize Vite + React + TypeScript project with Tailwind CSS v4 setup ([](https://github.com/yashmodi6/portfolio/commit/a25101762cd04f081baa21d448a1c8096971ee17))
 * install react-syntax-highlighter for code block rendering ([](https://github.com/yashmodi6/portfolio/commit/3205ec5886225411fb9e2df1623cc5cf1f95f96a))
 * install Tailwind Typography and set up Poppins as default font ([](https://github.com/yashmodi6/portfolio/commit/1390d1a533dc93cf7a4d319ed0522e06944b67f7))
+* **release:** generate changelog and update config ([](https://github.com/yashmodi6/portfolio/commit/7f8ad3d654873ef06bf80c7bd9c83296cb719e34))
 * remove AI-generated comments from skills array ([](https://github.com/yashmodi6/portfolio/commit/8f77d5a051d7767f512d8c2f84fb5ce710657e5a))
 * rename preview_hero.jpg to preview_home.jpg ([](https://github.com/yashmodi6/portfolio/commit/92c383d25ca197c964b5431bb1422205317122ad))
 
