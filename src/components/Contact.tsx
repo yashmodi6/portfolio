@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     return (
         <section
             id="contact"
-            className="fadeIn mt-28 w-full rounded-lg border border-blue-300"
+            className="fadeIn mt-28 w-full rounded-lg border border-blue-300 scroll-mt-28"
         >
             <div className="w-full p-4 leading-loose text-white">
                 <h1 className="text-3xl font-bold text-center md:text-left">

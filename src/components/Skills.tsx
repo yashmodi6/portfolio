@@ -83,7 +83,7 @@ const Skills: React.FC = () => {
     return (
         <section
             id="skills"
-            className="fadeIn mt-28 h-fit w-full rounded-lg border border-blue-300"
+            className="fadeIn mt-28 h-fit w-full rounded-lg border border-blue-300 scroll-mt-28"
         >
             <div className="w-full p-4 leading-loose tracking-[0.08rem] text-white md:mb-0">
                 {/* My Skills */}
