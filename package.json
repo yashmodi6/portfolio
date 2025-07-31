@@ -9,9 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
-    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
@@ -26,6 +25,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@vitejs/plugin-react": "^4.6.0",
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",

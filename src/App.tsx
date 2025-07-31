@@ -1,4 +1,3 @@
-import React from "react";
 import ComputerScreen from "./components/ComputerScreen";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
