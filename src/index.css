@@ -690,9 +690,4 @@ nav {
         background-position: -100% 0%;
     }
 }
-@keyframes fade-in {
-    to {
-        scale: 1;
-        opacity: 1;
-    }
-}
+
