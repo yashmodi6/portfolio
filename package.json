@@ -2,7 +2,7 @@
     "name": "portfolio",
     "homepage": "https://yashmodi6.github.io/portfolio",
     "private": true,
-    "version": "0.0.0",
+    "version": "1.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite --host",
@@ -11,11 +11,7 @@
         "preview": "vite preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist",
-
-  "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --config ./changelog.config.cjs"
-
-
-
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --config ./changelog.config.cjs"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.1.11",
