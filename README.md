@@ -36,7 +36,7 @@ src/
 ├── assets/       # Images, icons, etc.
 ├── components/   # Hero, Navbar, About, Skills, Projects, etc.
 ├── hooks/        # Custom scroll/navigation behavior
-├── styles/       # Tailwind and custom styles
+├── index.css       # Tailwind and custom styles
 └── App.tsx       # Root component
 ```
 
@@ -81,7 +81,7 @@ I'm **Yash Modi**, a front-end developer passionate about design systems, smooth
 
 ## 📄 License
 
-This project is open source under the [MIT License](./LICENSE).
+This project is open source under the [MIT License](./LICENSE.md).
 
 ---
 
