@@ -19,41 +19,18 @@ const coder = {
 };
 `;
 
-const customPrismTheme = {
-  'code[class*="language-"]': {
-    color: "#ffffff",
-    background: "transparent",
-    fontFamily: "monospace",
-    fontSize: "0.875em",
-    lineHeight: "1.5",
-    whiteSpace: "pre-wrap",
-    wordBreak: "break-word",
-  },
-
-  // Keywords
+const customPrismTheme: { [key: string]: React.CSSProperties } = {
   keyword: { color: "#c084fc" },
   boolean: { color: "#c084fc" },
-
-  // Strings
   string: { color: "#a4cafe" },
-
-  // Numbers
   number: { color: "#fce96a" },
-
-  // Properties
   property: { color: "#ffffff" },
   "attr-name": { color: "#ffffff" },
-
-  // Functions, variables, `this`
   function: { color: "#fce96a" },
   variable: { color: "#fce96a" },
   builtin: { color: "#fce96a" },
-  plain: { color: "#ffffff" }, // fallback white
-
-  // Punctuation
+  plain: { color: "#ffffff" },
   punctuation: { color: "#d1d5db" },
-
-  // Operators
   operator: { color: "#a4cafe" },
 };
 
@@ -63,7 +40,7 @@ const CoderCard: React.FC = () => {
       <SyntaxHighlighter
         language="javascript"
         style={customPrismTheme}
-        wrapLongLines={true}
+        wrapLongLines
         showLineNumbers={false}
         customStyle={{
           backgroundColor: "transparent",
@@ -75,13 +52,16 @@ const CoderCard: React.FC = () => {
           maxWidth: "100%",
           width: "100%",
           boxSizing: "border-box",
+          fontFamily: "monospace",
+          fontSize: "0.875em",
+          lineHeight: "1.5",
         }}
         codeTagProps={{
           style: {
             display: "block",
             whiteSpace: "pre-wrap",
             wordBreak: "break-word",
-            color: "#ffffff", // ✅ fallback: force white text on untagged tokens
+            color: "#ffffff",
           },
         }}
       >
