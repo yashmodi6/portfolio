@@ -54,7 +54,6 @@ src/
 ## 📸 Live Demo
 
 👉 [View Portfolio Live](https://yashmodi6.github.io)  
-_(Replace with your actual live site URL)_
 
 ---
 
