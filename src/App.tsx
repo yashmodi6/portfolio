@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project"
+import Contact from "./components/Contact"
 const App = () => {
     return (
         <main className="absolute h-full w-full">
@@ -17,6 +18,7 @@ const App = () => {
                 <About />
                 <Skills />
                 <Project/>
+                <Contact/>
             
             </div>
         </main>
