@@ -13,6 +13,7 @@ const Hero: React.FC = () => {
 
     return (
         <section
+        id="home"
             className="fixed z-0 h-screen w-full bg-blue-300 bg-cover bg-center"
             style={{ backgroundImage: `url(${gridBg})` }}
         >

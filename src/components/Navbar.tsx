@@ -33,13 +33,22 @@ const Navbar: React.FC = () => {
     const [activeLink, setActiveLink] = useState<string>("home");
 
     const handleNavClick = useCallback((id: string) => {
-        setActiveLink(id);
-        setIsMobileMenuOpen(false);
-    }, []);
+    if (id === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+    setActiveLink(id);
+    setIsMobileMenuOpen(false);
+}, []);
 
     const navLinks: NavLink[] = [
         { id: "home", label: "HOME" },
         { id: "about", label: "ABOUT" },
+        { id: "skills", label: "SKILLS" },
         { id: "projects", label: "PROJECTS" },
         { id: "contact", label: "CONTACT" }
     ];

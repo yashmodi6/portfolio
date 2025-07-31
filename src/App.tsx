@@ -7,7 +7,11 @@ import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+
+import useScrollToHome from "./hooks/useScrollToHome";
+
 const App = () => {
+  useScrollToHome();
     return (
         <main className="absolute h-full w-full">
             <ComputerScreen />
@@ -18,7 +22,7 @@ const App = () => {
                 <Skills />
                 <Project />
                 <Contact />
-                <Footer/>
+                <Footer />
             </div>
         </main>
     );
